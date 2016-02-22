@@ -115,7 +115,8 @@
 
 + (instancetype)readerWithMetadataObjectTypes:(NSArray *)metadataObjectTypes
 {
-    return [[self alloc] initWithMetadataObjectTypes:metadataObjectTypes];
+    NSArray *types = @[AVMetadataObjectTypeQRCode];
+    return [[self alloc] initWithMetadataObjectTypes:types];
 }
 
 + (instancetype)readerWithCancelButtonTitle:(NSString *)cancelTitle metadataObjectTypes:(NSArray *)metadataObjectTypes
